@@ -1,0 +1,10 @@
+.data-grid-container {
+    height: 90%;
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
