@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { useTheme } from "@mui/material/styles";
 import "../styles/Footer.css";
 
 const messages = [
@@ -31,16 +32,26 @@ const messages = [
   "Keep your face towards the sunshine! 🌞🌻",
   "Progress is progress, no matter how small! 📈🌱",
   "Stay focused on your goals; you're closer than you think! 🎯🏁",
-  "You are enough, just as you are! 🌼💖"
+  "You are enough, just as you are! 🌼💖",
 ];
 
-
 const Footer = () => {
+  const theme = useTheme();
   const randomMessage = messages[Math.floor(Math.random() * messages.length)];
 
   return (
-    <footer className='footer'>
-      {randomMessage}
+    <footer
+      className="footer"
+    >
+      <span style={{ fontSize: "1.5em" }}>{randomMessage}</span>
+      <span
+        style={{
+          position: "absolute",
+          right: "16px",
+        }}
+      >
+        BETA v0.4
+      </span>
     </footer>
   );
 };

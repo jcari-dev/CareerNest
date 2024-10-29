@@ -1,10 +1,22 @@
 .data-grid-container {
-    height: 90%;
-    width: 80%;
-    margin: auto;
-    padding-top: 20px;
+  height: 90%;
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-height: 90vh;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.ag-cell-tooltip {
+  position: absolute;
+  background-color: #fff;
+  color: #333;
+  padding: 5px;
+  border: 1px solid #ddd;
+  font-size: 12px;
+  z-index: 1000;
 }
